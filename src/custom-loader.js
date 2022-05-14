@@ -1,5 +1,5 @@
 import Manifest from './manifest';
-import IconImage from './assets/img/icons/custom-loader.png';
+import IconImage from './assets/img/icon.svg';
 import BannerImage from './assets/img/banners/custom-loader.svg';
 export default class CustomLoader extends PluginSystem {
     constructor() {
