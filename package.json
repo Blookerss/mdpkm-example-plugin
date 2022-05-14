@@ -1,4 +1,11 @@
 {
+    "name": "mdpkm-example-plugin",
+    "author": "Blookerss (https://github.com/Blookerss)",
+    "description": "Example plugin for mdpkm!",
+    "repository": "github:Blookerss/mdpkm-example-plugin",
+    "homepage": "https://github.com/Blookerss/mdpkm-example-plugin#readme",
+    "license": "MIT",
+    "version": "1.0.0",
     "scripts": {
         "build": "webpack"
     },
