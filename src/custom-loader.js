@@ -2,17 +2,20 @@ import Manifest from './manifest';
 import IconImage from './assets/img/icon.svg';
 import BannerImage from './assets/img/banners/custom-loader.svg';
 export default class CustomLoader extends PluginSystem {
+    type = 'java-modded';
+
     constructor() {
         super(Manifest.id);
     }
 
     async init() {
-        this.addLoader('custom_example', 'Custom Loader', {
+        this.addLoader('custom_example', LocalStrings['app.mdpkm.common.loaders.custom_example'], {
             icon: IconImage,
+            type: this.type,
             banner: BannerImage,
-            description: 'This is a custom loader from the mdpkm Example Plugin!'
+            description: LocalStrings['app.mdpkm.common.loaders.custom_example.summary']
         });
-        toast(LocalStrings['app.plugin.example_plugin.toast.test_message']);
+        toast(LocalStrings['app.plugin.example_plugin.toasts.test_message']);
     }
 
     async getVersions() {
