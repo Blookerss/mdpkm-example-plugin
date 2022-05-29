@@ -9,13 +9,11 @@ export default class CustomLoader extends PluginSystem {
     }
 
     async init() {
-        this.addLoader('custom_example', LocalStrings['app.mdpkm.common.loaders.custom_example'], {
+        this.addLoader('custom_example', {
             icon: IconImage,
             type: this.type,
-            banner: BannerImage,
-            description: LocalStrings['app.mdpkm.common.loaders.custom_example.summary']
+            banner: BannerImage
         });
-        toast(LocalStrings['app.plugin.example_plugin.toasts.test_message']);
     }
 
     async getVersions() {
