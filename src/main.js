@@ -1,3 +1,4 @@
+import './patcher';
 import Manifest from './manifest';
 import CustomLoader from './custom-loader';
 import EnglishCommon from './locales/en/common';
