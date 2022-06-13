@@ -1,4 +1,8 @@
+// mdpkm's UI Library:
+// https://github.com/Excalware/react-voxeliface
 const { Grid, Typography, TextHeader, NavigationItem } = Voxeliface;
+
+// https://docs.mdpkm.voxelified.com/docs/plugin-api/patcher
 Patcher.patchChild('Home', 'SideNavigation', child =>
     React.cloneElement(child, {
         children: Patcher.joinChild(
